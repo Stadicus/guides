@@ -25,23 +25,25 @@ In your web browser, do the following:
 
 1. Go to https://www.dropbox.com/developers/apps/create and sign in
 
-1. Choose **Dropbox Api**
+1. Choose **Scoped access**
 
-    ![Dropbox API 1](https://raw.githubusercontent.com/vindard/lnd-backup/master/images/dropbox-1.png)
+    ![Dropbox 1](https://github.com/d-hoffi/RaspiboltGerman/blob/main/images/dropbox1.png)
 
 1. Choose **App Folder**
 
-    ![Dropbox API 2](https://raw.githubusercontent.com/vindard/lnd-backup/master/images/dropbox-2.png)
+    ![Dropbox 2](https://github.com/d-hoffi/RaspiboltGerman/blob/main/images/dropbox2.png)
 
 1. Name your app and click **Create App** to proceed
 
-    ![Dropbox API 3](https://raw.githubusercontent.com/vindard/lnd-backup/master/images/dropbox-3.png)
+    ![Dropbox 3](https://github.com/d-hoffi/RaspiboltGerman/blob/main/images/dropbox3.png)
 
-1. On the settings page for your new app, scroll down to **OAuth 2** and click **Generate**
+1. On the settings page for your new app, scroll down to **OAuth 2** and change the **Access token expiration** to `No expiration`
 
-    ![Dropbox API 4](https://raw.githubusercontent.com/vindard/lnd-backup/master/images/dropbox-4.png)
+    ![Dropbox 4](https://github.com/d-hoffi/RaspiboltGerman/blob/main/images/dropbox4.png)
 
-1. You will now see a string of letters and numbers appear. This is your **Api Token**. Copy this token and keep it safe for the next steps. This api token will be referenced as `<dropbox-api-token>` in the next step.
+1. On the **Permissions* tab, check the boxes that is look the same like in the picture below. You can click ***Generate** in the **Settings** tab after this step. You will now see a string of letters and numbers appear. This is your **Api Token**. Copy this token and keep it safe for the next steps. This api token will be referenced as `<dropbox-api-token>` in the next step.
+
+    ![Dropbox 5](https://github.com/d-hoffi/RaspiboltGerman/blob/main/images/dropbox5.png)
 
 
 ### Preparation on the RaspiBolt
@@ -83,7 +85,7 @@ Start
 
 Monitor
 
-`$ journalctl -fu backup-channels`
+`$ sudo journalctl -fu backup-channels`
 
 Run at boot
 
